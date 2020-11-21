@@ -15,17 +15,19 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    background: linear-gradient(90deg, #ebf3cd, #66a293);
 }
 
 .clock {
     position: relative;
     width: 450px;
     height: 450px;
-    background-color: rgba(255, 255, 255, .6);
+    background-image: linear-gradient(285deg, rgba(0, 0, 0, 0.175) 50%, rgba(0, 0, 0, 0.1) 50%);
     border-radius: 50%;
     align-items: center;
     border: 5px solid black;
     z-index: 100;
+    overflow: hidden;
 }
 
 .clock .time {
@@ -63,56 +65,49 @@ body {
 
 .clock .time .sec {
     width: 3px;
-    height: 40%;
+    height: 36%;
 }
 
 .clock .time .min {
-    height: 38%;
+    height: 30%;
     width: 6px;
     border-radius: 2px;
 }
 
 .clock .time .hour {
-    height: 28%;
+    height: 25%;
     width: 8px;
     border-radius: 4px;
 }
 
 .clock .time #number12 {
-    color: red;
     margin-top: 3px;
 }
 
 .clock .time #number1 {
-    color: red;
     word-spacing: 12.5rem;
 }
 
 .clock .time #number2 {
-    color: red;
     word-spacing: 20.4rem;
     margin-top: 2rem;
 }
 
 .clock .time #number3 {
-    color: red;
     word-spacing: 24rem;
     margin-top: 3.3rem;
 }
 
 .clock .time #number4 {
-    color: red;
     word-spacing: 20.4rem;
     margin-top: 3.5rem;
 }
 
 .clock .time #number5 {
-    color: red;
     word-spacing: 12.5rem;
     margin-top: 2.2rem;
 }
 
 .clock .time #number6 {
-    color: red;
     margin-top: .4rem;
 }
