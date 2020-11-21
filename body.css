@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
 }
 
 body {
@@ -16,17 +17,17 @@ body {
 }
 
 .clock {
-    position: absolute;
+    position: relative;
     width: 450px;
     height: 450px;
     background-color: rgba(255, 255, 255, .6);
     border-radius: 50%;
     align-items: center;
     border: 5px solid black;
+    z-index: 100;
 }
 
 .clock .time {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,7 +35,78 @@ body {
     font-size: 2rem;
 }
 
-.clock .time .num #number1 {
-    font-size: 5rem;
-    color: aqua;
+.clock .time .center {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin-bottom: 4rem;
+}
+
+.clock .time .hour {
+    width: 10px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    transform: translateY(-3.6rem);
+    border-radius: 10rem;
+    transform: rotate(20deg);
+}
+
+.clock .time .min {
+    width: 5px;
+    height: 120px;
+    background-color: black;
+    position: absolute;
+    transform: translateY(-4.2rem);
+    border-radius: 10rem;
+    transform: rotate(50deg);
+}
+
+.clock .time .sec {
+    width: 2px;
+    height: 150px;
+    background-color: black;
+    position: absolute;
+    transform: translateY(5.3rem);
+    border-radius: 10rem;
+}
+
+.clock .time #number12 {
+    color: red;
+    margin-top: 1%;
+}
+
+.clock .time #number1 {
+    color: red;
+    word-spacing: 13rem;
+}
+
+.clock .time #number2 {
+    color: red;
+    word-spacing: 21rem;
+    margin-top: 10%;
+}
+
+.clock .time #number3 {
+    color: red;
+    word-spacing: 24.5rem;
+    margin-top: 10%;
+}
+
+.clock .time #number4 {
+    color: red;
+    word-spacing: 21rem;
+    margin-top: 11%;
+}
+
+.clock .time #number5 {
+    color: red;
+    word-spacing: 13rem;
+    margin-top: 10%;
+}
+
+.clock .time #number6 {
+    color: red;
 }
